@@ -1,0 +1,381 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap');
+/* font-family: 'Cormorant Garamond', serif; */
+* {  
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;  } 
+
+/* --------------- header --------------- */
+
+.navbar {
+    --bs-navbar-padding-x: 0;
+    --bs-navbar-padding-y: 0; }
+.navbar-brand {
+    margin-right: 0; }
+.navbar-toggler {
+    background-color: #0e0e0e; }
+.navCel {
+    background-color: #131313;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-bottom: 5px; }
+.offcanvas-body {
+    background-color: #131313; }
+.offcanvas-header {
+    background-color: #131313;
+    color: white; }
+.nav-link {
+    color: white; } 
+
+
+/* --------------- main --------------- */
+
+h1 {
+    font-family: 'Cormorant Garamond', serif;
+    color: white;
+    font-size: 60px;
+    font-weight: 100;
+    border: 2px white solid; 
+    padding: 0 15px 0 15px; }
+h2 {
+    color: white;
+    text-align: center; }
+h3 {
+    color: white;
+    font-size: 15px; }
+p {
+    color: white; }
+main {
+    background-color: #131313; }
+    
+/* --------------- inicio --------------- */
+
+.bienvenida { 
+    background-image: url(../img/portada2.jpg);
+    width: 100%;
+    height: 450px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+.bienvenida p {
+    color: white;
+    font-size: 30px;
+    font-style: italic; }
+
+.dest {
+    margin-bottom: 20px; }
+.destacados {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 150px; } 
+.destacados a {
+    color: #AD844C;
+    text-decoration: none;
+    border: 2px #AD844C solid;
+    border-radius: 8px;
+    width: fit-content;
+    padding: 6px 13px; }  
+
+.metodo {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #202020; }
+.pasos {
+    display: flex;
+    justify-content: center;
+    margin: 5px 20px 5px 20px; }
+.pasos div {
+    width: 20%;
+    margin-top: 20px;
+    justify-content: end;
+    align-content: center;
+    text-align: center; }
+.pasos div img {
+    width: 20%; }
+.pasos div h3 {
+    color: #AD844C; }    
+
+.testimonios{
+    padding-top: 20px;
+    padding-bottom: 20px; }
+.resenas {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly; }
+.resenas div {
+    background-color: #202020;
+    width: 300px; 
+    padding: 10px;} 
+.resenas div img {
+    width: 5%; }
+.resenas div h5 { 
+    color: white;
+    font-size: 10px; }
+.resenas div p {
+    font-size: 15px; }
+
+/* --------------- compra --------------- */
+
+.vermas {
+    text-decoration: none;
+    color: black;
+    font-weight: 1000;
+    background-color: #AD844C;
+    border-radius: 8px;
+    width: fit-content;
+    padding: 6px 13px; } 
+.carousel-item {
+    text-align: center; }
+.carrusel {
+    padding-bottom: 25px; }
+
+/* --------------- preguntas --------------- */
+
+.pregunta div h2 button { 
+    background-color: #131313;
+    color: white; }
+.collapsed {
+    color: white;
+    background-color: black;
+    box-shadow: #AD844C; }
+.respuesta {
+    background-color: #202020;
+    color: white;
+    border: #131313; }
+
+/* --------------- nosotros --------------- */
+
+.somos {
+    padding: 20px 0 20px 0;
+    display: flex;
+    justify-content: center;}
+.somos img {
+    width: 300px;} 
+.somos div {
+    margin-left: 20px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; }
+.somos div h2 {
+    color: #AD844C;
+    font-size: 20px; }
+.somos div p {
+    margin-top: 10px;
+    text-indent: 8px; }
+
+/* --------------- contacto --------------- */
+
+.contact {
+    margin-top: 20px; }
+.contactanos {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center; }
+.contactanos div {
+    margin: 5px 20px 5px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-content: center; 
+    text-align: center;}
+.contactanos div a {
+    text-decoration: none;}
+.contactanos div h5  {
+    font-size: 20px;
+    font-weight: 1000;
+    color: #AD844C;}
+.contactanos div p {
+    font-size: 10px; }
+
+.container { display: grid;
+    grid-template-columns: 5% 40% 5% 50%;
+    grid-template-rows: 0.25fr 2.5fr 0.25fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+        ". . . maps"
+        ". forms . maps"
+        ". . . maps" }
+    .forms { grid-area: forms; }
+    .maps { grid-area: maps; }
+      
+.forms div input {
+    width: 100%; }
+.forms div textarea {
+    width: 100%; } 
+.maps {
+    width: 100%;
+    height: 100%; }     
+
+/* ---------- footer ---------- */
+
+.wspp {
+    position: fixed;
+    bottom: 50px;
+    right: 2px; }
+.wspp a img {
+    width: 50%; }
+
+footer {
+    background-color: black; }
+
+/* ----------responsive---------- */
+
+@media screen and (max-width: 992px) {
+    .container { display: grid;
+        grid-template-columns: 5% 40% 5% 50%;
+        grid-template-rows: 0.25fr 2.5fr 0.25fr;
+        grid-auto-flow: row;
+        grid-template-areas:
+            ". . . maps"
+            ". forms . maps"
+            ". . . maps" }
+}
+
+
+@media screen and (max-width: 940px) {
+    .resenas div {
+    width: 250px; }
+}
+
+@media screen and (max-width: 910px) {
+    .somos img {
+        display: none;} 
+}
+
+@media screen and (max-width: 800px) {
+    h1 {
+        font-size: 40px;}
+    .bienvenida p {
+        font-size: 25px; }
+    .bienvenida { 
+        height: 300px; }
+}
+
+@media screen and (max-width: 780px) {
+    .destacados {
+        margin: 15px 30px; } 
+    .pasos div img {
+        width: 50%; }
+    .pasos div h3 {
+        font-size: 12px; }
+    .resenas {
+        flex-direction: column;
+        align-items: center; }
+    .resenas div {
+        margin: 5px 0;
+        width: 80%; } 
+    .resenas div p { 
+        font-size: 12px; }
+}
+
+@media screen and (max-width: 580px) {
+    header img {
+        width: 50%; }
+    h1 {
+        font-size: 30px;}
+    .bienvenida p {
+        font-size: 20px; }
+    .somos div p {
+        font-size: 15px; }
+    .container {  display: grid;
+        grid-template-columns: 0.5fr 1fr 0.5fr;
+        grid-template-rows: 0.25fr 2.5fr 0.5fr 3.5fr;
+        grid-auto-flow: row;
+        grid-template-areas:
+            ". . ."
+            ". forms ."
+            ". . ."
+            "maps maps maps"; }
+}
+
+@media screen and (max-width: 440px) {
+    .destacados {
+        margin: 15px; } 
+    .destacados a {
+        font-size: 10px;
+        padding: 5px 10px } 
+    .carousel-item img {
+        width: 250px; }
+    .pasos {
+        display: flex;
+        justify-content: center;
+        margin: 5px 0px; }
+    .pasos div img {
+        width: 40%; }
+    .pasos div h3 {
+        font-size: 8px; }
+    .container {  display: grid;
+        grid-template-columns: 0.25fr 3fr 0.25fr;
+        grid-template-rows: 0.25fr 2.5fr 0.5fr 3.5fr;
+        grid-auto-flow: row;
+        grid-template-areas:
+            ". . ."
+            ". forms ."
+            ". . ."
+            "maps maps maps"; }
+        .contactanos div {
+            margin: 5px ;}
+        .contactanos div h5  {
+            font-size: 12px; }
+        .contactanos div p {
+            font-size: 8px; }
+}
+
+
+@media screen and (max-width: 400px) {
+    header {
+        position: static; }
+    h1 {
+        font-size: 25px;}
+    .bienvenida p {
+        font-size: 15px; }
+    h2 {
+        font-size: 20px;     }
+    p {
+        font-size: 15px; }
+    .bienvenida p {
+        font-size: 15px; }
+    .destacados {
+        margin: 15px; } 
+    .destacados a {
+        color: #AD844C;
+        text-decoration: none;
+        font-size: 10px;
+        border: 2px #AD844C solid;
+        padding: 5px }  
+    .somos div {
+        width: 80%; }
+    .somos div p {
+        font-size: 14px; }
+    .container {  display: grid;
+        grid-template-columns: 0.5fr 1fr 0.5fr;
+        grid-template-rows: 0.25fr 2.5fr 0.5fr 3.5fr;
+        grid-auto-flow: row;
+        grid-template-areas:
+            ". . ."
+            ". forms ."
+            ". . ."
+            "maps maps maps"; }
+        .maps { grid-area: maps; }
+        .forms { grid-area: forms; }
+    .wspp {
+        bottom: 10px;
+        left: 10px; }
+    .wspp a img {
+        width: 15%; }
+}
+
+@media screen and (max-width: 340px) {
+    h1 {
+        font-size: 20px;}
+}

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Glanz</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container-fluid navCel">
+                <a class="navbar-brand" href="./index.html"><img src="./img/logo-grupo-glanz.jpeg" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Grupo Glanz</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/compra-tu-auto.html">Comprá tu auto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/preguntas-frecuentes.html">Preguntas frecuentes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="bienvenida">
+            <p>Bienvenidos a</p>
+            <h1>GRUPO GLANZ</h1>
+            <p>automotores</p>
+        </section>
+        <section class="carrusel">
+            <div class="destacados">
+                <h2>Destacados</h2>
+                <a href="./pages/compra-tu-auto.html">VER TODOS</a>
+            </div>
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active ">
+                        <div>
+                            <img src="./img/fiat-cronos-precision1.3cvt-montecarlo.png" alt="cronos-precision">
+                            <h3>Cronos precision</h3>
+                            <p>Características</p>
+                            <a class="vermas" href="">VER MÁS</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item ">
+                        <div>
+                            <img src="./img/fiat-pulse-impetus-azulbicolor.webp" alt="pulse-impetus">
+                            <h3>Pulse impetus</h3>
+                            <p>Características</p>
+                            <a class="vermas" href="">VER MÁS</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item ">
+                        <div>
+                            <img src="./img/fiat-toro-blanco.webp" alt="toro-volcano">
+                            <h3>Toro volcano</h3>
+                            <p>Características</p>
+                            <a class="vermas" href="">VER MÁS</a>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <section class="metodo">
+            <h2>Cómo comprar</h2>
+            <div class="pasos">
+                <div>
+                    <img src="./img/coche-blanco.png" alt="ilustracion-de-auto">
+                    <h3>Elegí tu auto</h3>
+                </div>
+                <div>
+                    <img src="./img/chat-blanco.png" alt="ilustracion-de-chat">
+                    <h3>Contactate con nosotros</h3>
+                </div>
+                <div>
+                    <img src="./img/ahorro-blanco.png" alt="ilustracion-de-ahorro">
+                    <h3>Elegí tu método de financiamiento</h3>
+                </div>
+                <div>
+                    <img src="./img/listo-blanco.png" alt="ilustracion-de-triunfo">
+                    <h3>¡Y listo!</h3> <!-- qué hacer -->
+                </div>
+            </div>
+        </section>
+        <section class="testimonios">
+            <h2>Testimonios de nuestros clientes</h2>
+            <div class="resenas">
+                <div>
+                    <h3>Nombre Apellido</h3>
+                    <h5>Compró un cronos</h5>
+                    <img src="./img/estrella-si.png" alt="estrella">
+                    <img src="./img/estrella-si.png" alt="estrella">
+                    <img src="./img/estrella-si.png" alt="estrella">
+                    <img src="./img/estrella-si.png" alt="estrella">
+                    <img src="./img/estrella-no.png" alt="estrella">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore culpa tenetur nulla eius eveniet
+                        ex id ad, vero distinctio quae eligendi optio eaque ratione ducimus atque officiis corrupti enim
+                        fugit?</p> <!--reseña -->
+                </div>
+                <div>
+                    <h3>Nombre Apellido</h3>
+                    <h5>Compró un cronos</h5>
+                    <img src="./img/estrella-si.png" alt="estrella">
+                    <img src="./img/estrella-si.png" alt="estrella">
+                    <img src="./img/estrella-si.png" alt="estrella">
+                    <img src="./img/estrella-si.png" alt="estrella">
+                    <img src="./img/estrella-no.png" alt="estrella">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore culpa tenetur nulla eius eveniet
+                        ex id ad, vero distinctio quae eligendi optio eaque ratione ducimus atque officiis corrupti enim
+                        fugit?</p> <!--reseña -->
+                </div>
+                <div>
+                    <h3>Nombre Apellido</h3>
+                    <h5>Compró un cronos</h5>
+                    <img src="./img/estrella-si.png" alt="estrella">
+                    <img src="./img/estrella-si.png" alt="estrella">
+                    <img src="./img/estrella-si.png" alt="estrella">
+                    <img src="./img/estrella-si.png" alt="estrella">
+                    <img src="./img/estrella-no.png" alt="estrella">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore culpa tenetur nulla eius eveniet
+                        ex id ad, vero distinctio quae eligendi optio eaque ratione ducimus atque officiis corrupti enim
+                        fugit?</p> <!--reseña -->
+                </div>
+            </div>
+        </section>
+        <div class="wspp">
+            <a href="https://wa.link/bwnh38" target="_blank"><img src="./img/whatsappgreen.png" alt="whatsapp"></a>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <a href="https://www.instagram.com" target="_blank"><img src="./img/icono-instagram.png"
+                    alt="instagram"></a>
+            <a href="https://www.linkedin.com/feed/" target="_blank"><img src="./img/icono-linkedin.png"
+                    alt="linkedin"></a>
+            <a href="https://www.facebook.com" target="_blank"><img src="./img/icono-facebook.png" alt="facebook"></a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
