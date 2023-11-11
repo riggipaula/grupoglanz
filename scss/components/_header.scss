@@ -1,0 +1,33 @@
+header {
+    .navbar {
+        --bs-navbar-padding-x: 0;
+        --bs-navbar-padding-y: 0;
+        div {
+            background-color: $color-primario;
+            padding-top: 5px;
+            padding-left: 10px;
+            padding-bottom: 5px;
+            a {
+                margin-right: 0;
+            }
+            button {
+                background-color: #0e0e0e;
+                 
+            }
+            div {
+                .offcanvas-header {
+                    background-color: $color-primario;
+                    color: white;
+                }
+                .offcanvas-body {
+                    background-color: $color-primario;
+                    ul {
+                        li {
+                            .nav-link {color: white;}
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

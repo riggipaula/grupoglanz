@@ -1,0 +1,29 @@
+$color-primario: #131313;
+$color-secundario: #AD844C;
+$color-terciario: #202020;
+
+/*-- listas --*/
+$size:
+#131313,
+10px,
+12px,
+15px,
+20px,
+25px,
+30px,
+40px;
+
+/*-- extends --*/
+%flexi {
+    display: flex;
+    justify-content: center; }
+
+/*-- mixins --*/
+@mixin flex ($flex, $direction, $justify, $align) {
+    display: $flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align; }
+
+
+    

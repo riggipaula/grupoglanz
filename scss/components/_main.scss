@@ -1,0 +1,203 @@
+/* --------------- inicio --------------- */
+
+main {
+    .bienvenida {
+        background-image: url(../img/portada2.jpg);
+        width: 100%;
+        height: 450px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        @include flex (flex, column, center, center);
+        p {
+            color: white;
+            font-size: nth($size, 6);
+            font-style: italic;}
+    }
+    .carrusel {
+        padding-bottom: 25px;
+        .destacados {
+            display: flex;
+            justify-content: space-between;
+            margin: 15px 150px;
+            a {
+                color: $color-secundario;
+                text-decoration: none;
+                border: 2px $color-secundario solid;
+                border-radius: 8px;
+                width: fit-content;
+                padding: 6px 13px;}
+        }
+        div {
+            div {
+                .carousel-item {
+                    text-align: center;
+                    div {
+                        a {
+                            text-decoration: none;
+                            color: black;
+                            font-weight: 1000;
+                            background-color: $color-secundario;
+                            border-radius: 8px;
+                            width: fit-content;
+                            padding: 6px 13px; }
+                    }
+                }
+            }
+        }
+    }
+    .metodo {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: $color-terciario; 
+        .pasos {
+            @extend %flexi ;
+            margin: 5px 20px 5px 20px;
+            div {width: 20%;
+                margin-top: 20px;
+                justify-content: end;
+                align-content: center;
+                text-align: center;
+                img {width: 20%;}
+                h3 {color: $color-secundario;}                
+            }
+        }
+    }
+    .testimonios {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        .resenas {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-evenly;
+            div {
+                background-color: $color-terciario;
+                width: 300px; 
+                padding: 10px;
+                h5 {color: white;
+                    font-size: nth($size, 1);}
+                img {width: 5%;}
+                p {font-size: nth($size, 3);}
+            }
+        }
+    }
+    .wspp {
+        position: fixed;
+        bottom: 50px;
+        right: 0px;
+        margin: 2px;
+        a {
+            img {width: 50%;}
+        }
+    }
+}
+
+/* --------------- preguntas --------------- */
+
+main {
+    section {
+        padding-bottom: 15px;
+        background-color: $color-primario;
+        .pregunta {
+            div {
+                h2 {
+                    button { 
+                        background-color: $color-primario;
+                        color: white;
+                    }
+                }
+                div { 
+                    color: white;
+                    background-color: black;
+                    box-shadow: $color-secundario;
+                    div {
+                        background-color: $color-terciario;
+                        color: white;
+                        border: $color-primario;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* --------------- nosotros --------------- */
+
+main {
+    .somos {
+        padding: 20px 0 20px 0;
+        @extend %flexi ;
+        img {
+            width: 400px;
+        }
+        div {
+            margin-left: 20px;
+            width: 500px;
+            @include flex (flex, column, space-evenly, center);
+            h2 {
+                color: $color-secundario;
+                font-size: nth($size, 4);}
+            p {
+                margin-top: 10px;
+                text-indent: 8px;}
+        }
+    }
+}
+
+/* --------------- contacto --------------- */
+
+main {
+    .contact {
+        margin-top: 20px; 
+        .contactanos { 
+            margin-top: 20px;
+            margin-bottom: 20px;
+            @extend %flexi ;
+            div {
+                margin: 5px 20px 5px 20px;
+                @include flex (flex, column, end, center);
+                align-content: center; 
+                text-align: center;
+                a {
+                    color: $color-secundario;
+                    text-decoration: none;
+                    img 
+                    h5 {
+                        font-size: nth($size, 4);
+                        font-weight: 1000; }
+                    p {
+                        font-size: nth($size, 1); }
+                }
+            }
+        }
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 5% 40% 5% 50%;
+        grid-template-rows: 50px 350px 50px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            ". . . maps"
+            ". forms . maps"
+            ". . . maps" ;
+        .forms { grid-area: forms; }
+        .maps { grid-area: maps; } }
+    .container {
+        div {
+            form {
+                div {
+                    label {
+                        color: white; }
+                    input {
+                        width: 100%; }
+                    textarea {
+                        width: 100%; }
+                }
+            }
+        }
+        iframe {
+            width: 100%;
+            height: 100%; }  
+    }
+}
