@@ -23,7 +23,13 @@ header {
                     background-color: $color-primario;
                     ul {
                         li {
-                            .nav-link {color: white;}
+                            .nav-link {
+                                color: white;
+                                transition: 0.5s;
+                                &:hover {
+                                    color: $color-secundario;
+                                    }
+                            }
                         }
                     }
                 }

@@ -22,26 +22,48 @@ main {
             justify-content: space-between;
             margin: 15px 150px;
             a {
-                color: $color-secundario;
+                padding: 10px 24px;
+                font-size: 16px;
+                font-weight: 400;
+                border: 2px solid $color-terciario;
+                color: white;
+                background-color: transparent;
+                cursor: pointer;
+                border-radius: 34px;
                 text-decoration: none;
-                border: 2px $color-secundario solid;
-                border-radius: 8px;
-                width: fit-content;
-                padding: 6px 13px;}
+                transition: all 0.8s cubic-bezier(0.23, 1, 0.320, 1); 
+                &:hover {
+                    border-color: $color-secundario;
+                    box-shadow: 0 0px 15px $color-secundario; 
+                }
+            }
         }
         div {
             div {
                 .carousel-item {
                     text-align: center;
-                    div {
-                        a {
+                    .tarjeta {
+                        padding-bottom: 20px ;
+                        h3 {
+                            font-size: nth($size, 4);}
+                        .vermas {
+                            cursor: pointer;
+                            position: relative;
+                            padding: 10px 24px;
+                            font-size: 18px;
+                            font-weight: 600;
                             text-decoration: none;
-                            color: black;
-                            font-weight: 1000;
-                            background-color: $color-secundario;
-                            border-radius: 8px;
-                            width: fit-content;
-                            padding: 6px 13px; }
+                            color: $color-secundario;
+                            border: 2px solid $color-secundario;
+                            border-radius: 34px;
+                            background-color: transparent;
+                            transition: all 0.8s cubic-bezier(0.23, 1, 0.320, 1); 
+                            &:hover {
+                                color: $color-primario;
+                                background-color: $color-secundario;
+                                box-shadow: 0 0px 15px $color-secundario; 
+                            }
+                        }
                     }
                 }
             }
@@ -85,8 +107,7 @@ main {
     .wspp {
         position: fixed;
         bottom: 50px;
-        right: 0px;
-        margin: 2px;
+        right: 5px;
         a {
             img {width: 50%;}
         }
@@ -102,9 +123,13 @@ main {
         .pregunta {
             div {
                 h2 {
-                    button { 
+                    .accordion-button { 
                         background-color: $color-primario;
                         color: white;
+                        &:not(.collapsed) {
+                            color: #AD844C;
+                            background-color: #131313;
+                            box-shadow: 0 0px 15px #AD844C;}
                     }
                 }
                 div { 
@@ -190,9 +215,18 @@ main {
                     label {
                         color: white; }
                     input {
-                        width: 100%; }
+                        width: 100%;
+                        border-radius: 10px;
+                        background-color: $color-terciario; }
+                    select {
+                        border-radius: 10px;
+                        background-color: $color-terciario;
+                        option {color: white;}
+                        }
                     textarea {
-                        width: 100%; }
+                        width: 100%;
+                        border-radius: 10px;
+                        background-color: $color-terciario; }
                 }
             }
         }

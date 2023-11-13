@@ -28,7 +28,7 @@ h2 {
 
 h3 {
   color: white;
-  font-size: 12px; }
+  font-size: 15px; }
 
 p {
   color: white; }
@@ -54,7 +54,10 @@ header .navbar {
     header .navbar div div .offcanvas-body {
       background-color: #131313; }
       header .navbar div div .offcanvas-body ul li .nav-link {
-        color: white; }
+        color: white;
+        transition: 0.5s; }
+        header .navbar div div .offcanvas-body ul li .nav-link:hover {
+          color: #AD844C; }
 
 /* --------------- inicio --------------- */
 main .bienvenida {
@@ -71,7 +74,7 @@ main .bienvenida {
   align-items: center; }
   main .bienvenida p {
     color: white;
-    font-size: 25px;
+    font-size: 30px;
     font-style: italic; }
 
 main .carrusel {
@@ -81,22 +84,41 @@ main .carrusel {
     justify-content: space-between;
     margin: 15px 150px; }
     main .carrusel .destacados a {
-      color: #AD844C;
+      padding: 10px 24px;
+      font-size: 16px;
+      font-weight: 400;
+      border: 2px solid #202020;
+      color: white;
+      background-color: transparent;
+      cursor: pointer;
+      border-radius: 34px;
       text-decoration: none;
-      border: 2px #AD844C solid;
-      border-radius: 8px;
-      width: fit-content;
-      padding: 6px 13px; }
+      transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1); }
+      main .carrusel .destacados a:hover {
+        border-color: #AD844C;
+        box-shadow: 0 0px 15px #AD844C; }
   main .carrusel div div .carousel-item {
     text-align: center; }
-    main .carrusel div div .carousel-item div a {
-      text-decoration: none;
-      color: black;
-      font-weight: 1000;
-      background-color: #AD844C;
-      border-radius: 8px;
-      width: fit-content;
-      padding: 6px 13px; }
+    main .carrusel div div .carousel-item .tarjeta {
+      padding-bottom: 20px; }
+      main .carrusel div div .carousel-item .tarjeta h3 {
+        font-size: 20px; }
+      main .carrusel div div .carousel-item .tarjeta .vermas {
+        cursor: pointer;
+        position: relative;
+        padding: 10px 24px;
+        font-size: 18px;
+        font-weight: 600;
+        text-decoration: none;
+        color: #AD844C;
+        border: 2px solid #AD844C;
+        border-radius: 34px;
+        background-color: transparent;
+        transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1); }
+        main .carrusel div div .carousel-item .tarjeta .vermas:hover {
+          color: #131313;
+          background-color: #AD844C;
+          box-shadow: 0 0px 15px #AD844C; }
 
 main .metodo {
   padding-top: 20px;
@@ -128,17 +150,16 @@ main .testimonios {
       padding: 10px; }
       main .testimonios .resenas div h5 {
         color: white;
-        font-size: #131313; }
+        font-size: 10px; }
       main .testimonios .resenas div img {
         width: 5%; }
       main .testimonios .resenas div p {
-        font-size: 12px; }
+        font-size: 15px; }
 
 main .wspp {
   position: fixed;
   bottom: 50px;
-  right: 0px;
-  margin: 2px; }
+  right: 5px; }
   main .wspp a img {
     width: 50%; }
 
@@ -146,9 +167,13 @@ main .wspp {
 main section {
   padding-bottom: 15px;
   background-color: #131313; }
-  main section .pregunta div h2 button {
+  main section .pregunta div h2 .accordion-button {
     background-color: #131313;
     color: white; }
+    main section .pregunta div h2 .accordion-button:not(.collapsed) {
+      color: #AD844C;
+      background-color: #131313;
+      box-shadow: 0 0px 15px #AD844C; }
   main section .pregunta div div {
     color: white;
     background-color: black;
@@ -172,7 +197,7 @@ main .somos {
     align-items: center; }
     main .somos div h2 {
       color: #AD844C;
-      font-size: 15px; }
+      font-size: 20px; }
     main .somos div p {
       margin-top: 10px;
       text-indent: 8px; }
@@ -195,10 +220,10 @@ main .contact {
         color: #AD844C;
         text-decoration: none; }
         main .contact .contactanos div a img h5 {
-          font-size: 15px;
+          font-size: 20px;
           font-weight: 1000; }
         main .contact .contactanos div a p {
-          font-size: #131313; }
+          font-size: 10px; }
 
 main .container {
   display: grid;
@@ -215,10 +240,20 @@ main .container div form div label {
   color: white; }
 
 main .container div form div input {
-  width: 100%; }
+  width: 100%;
+  border-radius: 10px;
+  background-color: #202020; }
+
+main .container div form div select {
+  border-radius: 10px;
+  background-color: #202020; }
+  main .container div form div select option {
+    color: white; }
 
 main .container div form div textarea {
-  width: 100%; }
+  width: 100%;
+  border-radius: 10px;
+  background-color: #202020; }
 
 main .container iframe {
   width: 100%;
@@ -249,11 +284,11 @@ footer {
 
 @media screen and (max-width: 800px) {
   h1 {
-    font-size: 30px; }
+    font-size: 40px; }
   main .bienvenida {
     height: 300px; }
     main .bienvenida p {
-      font-size: 20px; } }
+      font-size: 25px; } }
 
 @media screen and (max-width: 780px) {
   main .carrusel .destacados {
@@ -261,7 +296,7 @@ footer {
   main .metodo .pasos div img {
     width: 50%; }
   main .metodo .pasos div h3 {
-    font-size: 10px; }
+    font-size: 12px; }
   main .testimonios .resenas {
     flex-direction: column;
     align-items: center; }
@@ -269,17 +304,17 @@ footer {
       margin: 5px 0;
       width: 80%; }
       main .testimonios .resenas div p {
-        font-size: 10px; } }
+        font-size: 12px; } }
 
 @media screen and (max-width: 580px) {
   header img {
     width: 85%; }
   h1 {
-    font-size: 25px; }
+    font-size: 30px; }
   main .bienvenida p {
-    font-size: 15px; }
+    font-size: 20px; }
   .somos div p {
-    font-size: 12px; }
+    font-size: 15px; }
   main .container {
     display: grid;
     grid-template-columns: 0.5fr 1fr 0.5fr;
@@ -310,7 +345,7 @@ footer {
   .destacados {
     margin: 15px; }
     .destacados a {
-      font-size: #131313;
+      font-size: 10px;
       padding: 5px 10px; }
   .carousel-item img {
     width: 250px; }
@@ -325,7 +360,7 @@ footer {
   main .contact .contactanos div {
     margin: 5px 1px; }
     main .contact .contactanos div h5 {
-      font-size: 10px; }
+      font-size: 12px; }
     main .contact .contactanos div p {
       font-size: 8px; } }
 
@@ -333,21 +368,21 @@ footer {
   header {
     position: static; }
   h1 {
-    font-size: 20px; }
+    font-size: 25px; }
   .bienvenida p {
-    font-size: 12px; }
-  h2 {
     font-size: 15px; }
+  h2 {
+    font-size: 20px; }
   p {
-    font-size: 12px; }
+    font-size: 15px; }
   .bienvenida p {
-    font-size: 12px; }
+    font-size: 15px; }
   .destacados {
     margin: 15px; }
     .destacados a {
       color: #AD844C;
       text-decoration: none;
-      font-size: #131313;
+      font-size: 10px;
       border: 2px #AD844C solid;
       padding: 5px; }
   .somos div {
@@ -362,4 +397,4 @@ footer {
 
 @media screen and (max-width: 340px) {
   h1 {
-    font-size: 15px; } }
+    font-size: 20px; } }

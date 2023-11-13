@@ -28,7 +28,10 @@
     background-color: #131313;
     color: white; }
 .nav-link {
-    color: white; } 
+    color: white;  
+    transition: 0.5s; }
+.nav-link:hover {
+    color: #AD844C; }
 
 
 /* --------------- main --------------- */
@@ -77,12 +80,24 @@ main {
     justify-content: space-between;
     margin: 15px 150px; } 
 .destacados a {
-    color: #AD844C;
+    padding: 10px 24px;
+    font-size: 16px;
+    font-weight: 400;
+    border: 2px solid #202020;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 34px;
     text-decoration: none;
-    border: 2px #AD844C solid;
-    border-radius: 8px;
-    width: fit-content;
-    padding: 6px 13px; }  
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.320, 1); }
+.destacados a:hover {
+    border-color: #AD844C;
+    box-shadow: 0 0px 15px #AD844C; }
+
+.tarjeta {
+    padding-bottom: 20px;}
+.tarjeta h3 {
+    font-size: 20px; }
 
 .metodo {
     padding-top: 20px;
@@ -125,13 +140,22 @@ main {
 /* --------------- compra --------------- */
 
 .vermas {
+    cursor: pointer;
+    position: relative;
+    padding: 10px 24px;
+    font-size: 18px;
+    font-weight: 600;
     text-decoration: none;
-    color: black;
-    font-weight: 1000;
+    color: #AD844C;
+    border: 2px solid #AD844C;
+    border-radius: 34px;
+    background-color: transparent;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.320, 1); }
+.vermas:hover {
+    color: #131313;
     background-color: #AD844C;
-    border-radius: 8px;
-    width: fit-content;
-    padding: 6px 13px; } 
+    box-shadow: 0 0px 15px #AD844C; }
+
 .carousel-item {
     text-align: center; }
 .carrusel {
@@ -142,14 +166,14 @@ main {
 .pregunta div h2 button { 
     background-color: #131313;
     color: white; }
-.collapsed {
-    color: white;
-    background-color: black;
-    box-shadow: #AD844C; }
 .respuesta {
     background-color: #202020;
     color: white;
     border: #131313; }
+.accordion-button:not(.collapsed) {
+    color: #AD844C;
+    background-color: #131313;
+    box-shadow: 0 0px 15px #AD844C;}
 
 
 /* --------------- nosotros --------------- */
@@ -209,10 +233,21 @@ main {
     .forms { grid-area: forms; }
     .maps { grid-area: maps; }
       
+.forms div label {
+    color: white; }
 .forms div input {
-    width: 100%; }
+    width: 100%; 
+    border-radius: 10px;
+    background-color: #202020;}
+.forms div select {
+    border-radius: 10px;
+    background-color: #202020;}
+.forms div select option {
+    color: white; }
 .forms div textarea {
-    width: 100%; } 
+    width: 100%; 
+    border-radius: 10px;
+    background-color: #202020; } 
 .maps {
     width: 100%;
     height: 100%; }     
@@ -222,7 +257,7 @@ main {
 .wspp {
     position: fixed;
     bottom: 50px;
-    right: 2px; }
+    right: 5px; }
 .wspp a img {
     width: 50%; }
 
