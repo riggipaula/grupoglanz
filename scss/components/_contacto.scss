@@ -1,0 +1,63 @@
+main {
+    .contact {
+        margin-top: 20px; 
+        .contactanos { 
+            margin-top: 20px;
+            margin-bottom: 20px;
+            @extend %flexi ;
+            div {
+                margin: 5px 20px 5px 20px;
+                @include flex (flex, column, end, center);
+                align-content: center; 
+                text-align: center;
+                a {
+                    color: $color-secundario;
+                    text-decoration: none;
+                    img 
+                    h5 {
+                        font-size: nth($size, 4);
+                        font-weight: 1000; }
+                    p {
+                        font-size: nth($size, 1); }
+                }
+            }
+        }
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 5% 40% 5% 50%;
+        grid-template-rows: 50px 350px 50px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            ". . . maps"
+            ". forms . maps"
+            ". . . maps" ;
+        .forms { grid-area: forms; }
+        .maps { grid-area: maps; } }
+    .container {
+        div {
+            form {
+                div {
+                    label {
+                        color: white; }
+                    input {
+                        width: 100%;
+                        border-radius: 10px;
+                        background-color: $color-terciario; }
+                    select {
+                        border-radius: 10px;
+                        background-color: $color-terciario;
+                        option {color: white;}
+                        }
+                    textarea {
+                        width: 100%;
+                        border-radius: 10px;
+                        background-color: $color-terciario; }
+                }
+            }
+        }
+        iframe {
+            width: 100%;
+            height: 100%; }  
+    }
+}

@@ -1,0 +1,127 @@
+main {
+    .bienvenida {
+        background-image: url(../img/portada2.jpg);
+        width: 100%;
+        height: 450px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        @include flex (flex, column, center, center);
+        p {
+            color: white;
+            font-size: nth($size, 6);
+            font-style: italic;}
+    }
+    .carrusel {
+        padding-bottom: 25px;
+        .destacados {
+            display: flex;
+            justify-content: space-between;
+            margin: 15px 150px;
+            a {
+                padding: 10px 24px;
+                font-size: 16px;
+                font-weight: 400;
+                border: 2px solid $color-terciario;
+                color: white;
+                background-color: transparent;
+                cursor: pointer;
+                border-radius: 34px;
+                text-decoration: none;
+                transition: all 0.8s cubic-bezier(0.23, 1, 0.320, 1); 
+                &:hover {
+                    border-color: $color-secundario;
+                    box-shadow: 0 0px 15px $color-secundario; 
+                }
+            }
+        }
+        div {
+            div {
+                .carousel-item {
+                    text-align: center;
+                    .tarjeta {
+                        padding-bottom: 20px ;
+                        h3 {
+                            font-size: nth($size, 4);}
+                        .vermas {
+                            cursor: pointer;
+                            position: relative;
+                            padding: 10px 24px;
+                            font-size: 18px;
+                            font-weight: 600;
+                            text-decoration: none;
+                            color: $color-secundario;
+                            border: 2px solid $color-secundario;
+                            border-radius: 34px;
+                            background-color: transparent;
+                            transition: all 0.8s cubic-bezier(0.23, 1, 0.320, 1); 
+                            &:hover {
+                                color: $color-primario;
+                                background-color: $color-secundario;
+                                box-shadow: 0 0px 15px $color-secundario; 
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .metodo {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: $color-terciario; 
+        .pasos {
+            @extend %flexi ;
+            margin: 5px 20px 5px 20px;
+            div {width: 20%;
+                margin-top: 20px;
+                justify-content: end;
+                align-content: center;
+                text-align: center;
+                img {width: 20%;}
+                h3 {color: $color-secundario;}                
+            }
+        }
+    }
+    .testimonios {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        .resenas {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-evenly;
+            div {
+                background-color: $color-terciario;
+                width: 300px; 
+                padding: 10px;
+                h3 {font-size: nth($size, 4);}
+                h5 {color: white;
+                    font-size: nth($size, 2);}
+                img {width: 5%;
+                    margin-bottom: 2px;}
+                p {font-size: nth($size, 2);}
+            }
+        }
+    }
+    .wspp {
+        position: fixed;
+        bottom: 50px;
+        right: 5px;
+        a {
+            img {width: 50%;
+                cursor: pointer;
+                border-radius: 50px;
+                transition: all 0.8s cubic-bezier(0.23, 1, 0.320, 1);
+                &:hover {
+                    scale: 1.1;
+                    box-shadow: 0 0px 15px #29a71a ;  }
+            }
+        }
+    }
+}
+
+
+
+     
+    

@@ -1,4 +1,29 @@
 footer {
     background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    .redes {
+        margin: 10px 20px;
+        a {
+            margin: 5px;
+        }
+    }
+    .vinculos {
+        display: flex;
+        div {
+            margin: 10px 20px;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            a {
+                margin-bottom: 5px;
+                color: white;
+                font-size: nth($size, 1);
+                text-decoration: none;
+            }
+        }
+    }
     
 }

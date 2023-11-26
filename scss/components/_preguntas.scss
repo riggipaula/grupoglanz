@@ -1,0 +1,30 @@
+main {
+    section {
+        padding-bottom: 15px;
+        background-color: $color-primario;
+        .pregunta {
+            div {
+                h2 {
+                    .accordion-button { 
+                        background-color: $color-primario;
+                        color: white;
+                        &:not(.collapsed) {
+                            color: #AD844C;
+                            background-color: #131313;
+                            box-shadow: 0 0px 15px #AD844C;}
+                    }
+                }
+                div { 
+                    color: white;
+                    background-color: black;
+                    box-shadow: $color-secundario;
+                    div {
+                        background-color: $color-terciario;
+                        color: white;
+                        border: $color-primario;
+                    }
+                }
+            }
+        }
+    }
+}

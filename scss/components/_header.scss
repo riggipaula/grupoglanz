@@ -3,7 +3,7 @@ header {
         --bs-navbar-padding-x: 0;
         --bs-navbar-padding-y: 0;
         div {
-            background-color: $color-primario;
+            background-color: #131313ec;
             padding-top: 5px;
             padding-left: 10px;
             padding-bottom: 5px;
@@ -11,16 +11,15 @@ header {
                 margin-right: 0;
             }
             button {
-                background-color: #0e0e0e;
-                 
+                background-color: rgb(214, 212, 212);
             }
             div {
                 .offcanvas-header {
-                    background-color: $color-primario;
+                    background-color: transparent;
                     color: white;
                 }
                 .offcanvas-body {
-                    background-color: $color-primario;
+                    background-color: transparent;
                     ul {
                         li {
                             .nav-link {

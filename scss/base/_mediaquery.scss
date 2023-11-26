@@ -12,6 +12,21 @@
             .maps { grid-area: maps; } 
         }
     }
+    header {
+        .navbar {
+            div {
+                background-color: transparent;
+                div {
+                    .offcanvas-header {
+                        background-color: $color-primario;
+                    }
+                    .offcanvas-body {
+                        background-color: $color-primario;
+                    }
+                }
+            }
+        }
+    }
 }
 
 
@@ -133,6 +148,22 @@
                     margin-right: 0;
                     width: 150px;
                 }
+            }
+        }
+    }
+    footer {
+        flex-direction: column;
+        .vinculos {
+            flex-direction: column; 
+            padding-bottom: 10px;         
+            div {
+                align-items: center;
+                text-align: center;  
+                flex-direction: column;
+                margin: 0;
+                a {
+                    margin-bottom: 5px;
+                }                
             }
         }
     }

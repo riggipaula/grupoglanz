@@ -40,26 +40,25 @@ header .navbar {
   --bs-navbar-padding-x: 0;
   --bs-navbar-padding-y: 0; }
   header .navbar div {
-    background-color: #131313;
+    background-color: #131313ec;
     padding-top: 5px;
     padding-left: 10px;
     padding-bottom: 5px; }
     header .navbar div a {
       margin-right: 0; }
     header .navbar div button {
-      background-color: #0e0e0e; }
+      background-color: #d6d4d4; }
     header .navbar div div .offcanvas-header {
-      background-color: #131313;
+      background-color: transparent;
       color: white; }
     header .navbar div div .offcanvas-body {
-      background-color: #131313; }
+      background-color: transparent; }
       header .navbar div div .offcanvas-body ul li .nav-link {
         color: white;
         transition: 0.5s; }
         header .navbar div div .offcanvas-body ul li .nav-link:hover {
           color: #AD844C; }
 
-/* --------------- inicio --------------- */
 main .bienvenida {
   background-image: url(../img/portada2.jpg);
   width: 100%;
@@ -148,22 +147,30 @@ main .testimonios {
       background-color: #202020;
       width: 300px;
       padding: 10px; }
+      main .testimonios .resenas div h3 {
+        font-size: 20px; }
       main .testimonios .resenas div h5 {
         color: white;
-        font-size: 10px; }
+        font-size: 12px; }
       main .testimonios .resenas div img {
-        width: 5%; }
+        width: 5%;
+        margin-bottom: 2px; }
       main .testimonios .resenas div p {
-        font-size: 15px; }
+        font-size: 12px; }
 
 main .wspp {
   position: fixed;
   bottom: 50px;
   right: 5px; }
   main .wspp a img {
-    width: 50%; }
+    width: 50%;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1); }
+    main .wspp a img:hover {
+      scale: 1.1;
+      box-shadow: 0 0px 15px #29a71a; }
 
-/* --------------- preguntas --------------- */
 main section {
   padding-bottom: 15px;
   background-color: #131313; }
@@ -183,7 +190,6 @@ main section {
       color: white;
       border: #131313; }
 
-/* --------------- nosotros --------------- */
 main .somos {
   padding: 20px 0 20px 0; }
   main .somos img {
@@ -202,7 +208,6 @@ main .somos {
       margin-top: 10px;
       text-indent: 8px; }
 
-/* --------------- contacto --------------- */
 main .contact {
   margin-top: 20px; }
   main .contact .contactanos {
@@ -260,7 +265,27 @@ main .container iframe {
   height: 100%; }
 
 footer {
-  background-color: black; }
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+  footer .redes {
+    margin: 10px 20px; }
+    footer .redes a {
+      margin: 5px; }
+  footer .vinculos {
+    display: flex; }
+    footer .vinculos div {
+      margin: 10px 20px;
+      text-align: left;
+      display: flex;
+      flex-direction: column; }
+      footer .vinculos div a {
+        margin-bottom: 5px;
+        color: white;
+        font-size: 10px;
+        text-decoration: none; }
 
 @media screen and (max-width: 992px) {
   main .container {
@@ -272,7 +297,13 @@ footer {
     main .container .forms {
       grid-area: forms; }
     main .container .maps {
-      grid-area: maps; } }
+      grid-area: maps; }
+  header .navbar div {
+    background-color: transparent; }
+    header .navbar div div .offcanvas-header {
+      background-color: #131313; }
+    header .navbar div div .offcanvas-body {
+      background-color: #131313; } }
 
 @media screen and (max-width: 940px) {
   main .testimonios .resenas div {
@@ -339,7 +370,19 @@ footer {
       grid-area: maps; }
   header nav div .navbar-brand {
     margin-right: 0;
-    width: 150px; } }
+    width: 150px; }
+  footer {
+    flex-direction: column; }
+    footer .vinculos {
+      flex-direction: column;
+      padding-bottom: 10px; }
+      footer .vinculos div {
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        margin: 0; }
+        footer .vinculos div a {
+          margin-bottom: 5px; } }
 
 @media screen and (max-width: 440px) {
   .destacados {
